@@ -88,37 +88,8 @@ public class TestGrafo {
         System.out.println("Grafo no dirigido tiene " + grafoPersonas.obtenerCantidadVertices() + " vertices");
         System.out.println("Grafo dirigido tiene " + grafoDirigido.obtenerCantidadVertices() + " vertices");
         
-        System.out.println("\n=== DEMOSTRACION PILA Y COLA ===");
-        demonstrarPilaYCola();
         
         System.out.println("\n=== FIN DEL PROGRAMA ===");
     }
     
-    private static void demonstrarPilaYCola() {
-        System.out.println("\nDemostración de PILA (LIFO - Last In, First Out):");
-        interfaces.IPila pila = new model.Pila();
-        
-        System.out.println("Apilando: 1, 2, 3");
-        pila.apilar(1);
-        pila.apilar(2);
-        pila.apilar(3);
-        
-        System.out.println("Desapilando: " + pila.desapilar());
-        System.out.println("Desapilando: " + pila.desapilar());
-        System.out.println("Desapilando: " + pila.desapilar());
-        System.out.println("¿Está vacía? " + pila.estaVacia());
-        
-        System.out.println("\nDemostración de COLA (FIFO - First In, First Out):");
-        interfaces.ICola cola = new model.Cola();
-        
-        System.out.println("Encolando: 10, 20, 30");
-        cola.encolar(10);
-        cola.encolar(20);
-        cola.encolar(30);
-        
-        System.out.println("Desencolando: " + cola.desencolar());
-        System.out.println("Desencolando: " + cola.desencolar());
-        System.out.println("Desencolando: " + cola.desencolar());
-        System.out.println("¿Está vacía? " + cola.estaVacia());
-    }
 }
